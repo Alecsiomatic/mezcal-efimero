@@ -1,0 +1,57 @@
+.glass-input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.glass-input-label {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.glass-input-field {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  color: #fff;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0.875rem 1rem;
+  outline: none;
+  resize: none;
+  transition: border-color 0.3s, box-shadow 0.3s, background 0.3s;
+}
+
+.glass-input-field::placeholder {
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.glass-input-field:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.glass-input-field:focus {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(212, 175, 55, 0.5);
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.15);
+}
+
+.glass-input-field.has-error {
+  border-color: rgba(239, 68, 68, 0.5);
+}
+
+.glass-input-error {
+  font-size: 0.75rem;
+  color: #ef4444;
+}
+
+textarea.glass-input-field {
+  min-height: 100px;
+}

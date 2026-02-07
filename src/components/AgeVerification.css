@@ -1,0 +1,114 @@
+.age-verification-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.age-verification-modal {
+  max-width: 480px;
+  width: 100%;
+}
+
+.age-verification-content {
+  padding: 3rem 2.5rem;
+  text-align: center;
+}
+
+.age-verification-logo {
+  height: 60px;
+  width: auto;
+  margin-bottom: 2rem;
+  filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.3));
+}
+
+.age-verification-content h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.75rem;
+  color: #D4AF37;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.age-verification-text {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.age-verification-question {
+  font-size: 1.25rem;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.age-verification-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.age-verification-buttons > div {
+  width: 100%;
+}
+
+.age-verification-buttons .glass-button {
+  width: 100%;
+  justify-content: center;
+}
+
+.age-verification-disclaimer {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.age-verification-disclaimer a {
+  color: #D4AF37;
+  text-decoration: none;
+}
+
+.age-verification-disclaimer a:hover {
+  text-decoration: underline;
+}
+
+.age-verification-warning {
+  font-size: 0.7rem;
+  color: rgba(212, 175, 55, 0.7);
+  padding: 0.75rem;
+  background: rgba(212, 175, 55, 0.1);
+  border-radius: 8px;
+  border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .age-verification-content {
+    padding: 2rem 1.5rem;
+  }
+
+  .age-verification-logo {
+    height: 45px;
+  }
+
+  .age-verification-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .age-verification-question {
+    font-size: 1.1rem;
+  }
+}
